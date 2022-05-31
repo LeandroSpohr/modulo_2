@@ -17,7 +17,7 @@ function App() {
           <Route path="inicio" element={<Inicio />} />
           <Route path="teste" element={<Teste />} />
         </Routes>
-      </BrowserRouter>,
+      </BrowserRouter>
     </>
   );
 }
