@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios'
+import { useFormik } from 'formik';
+import { TextField, Button } from '@mui/material';
 
 function Home() {
   const [temp, setTemp] = useState('');
@@ -13,12 +15,38 @@ function Home() {
       })
   }, []);
 
+  const formik = useFormik({
+    initialValues: {
+      email: 'teste@teste.com',
+    },
+    onSubmit: search,
+  });
+
+  const { handleChange, values, handleSubmit } = formik
+  const { email } = values
+
+  function search(values) {
+    alert(JSON.stringify(values, null, 2));
+  }
+
   return (
-    <div>
-      <p>Temperatura: {temp}</p>
-      <p>Vento: {weather && weather.wind}</p>
-      <p>Condição: {weather && weather.description}</p>
-    </div>
+    <form onSubmit={handleSubmit}>
+       <TextField
+        id="email"
+        name="email"
+        type="email"
+        label="Email"
+        onChange={handleChange}
+        value={email}
+       />
+ 
+       <Button
+        type="submit"
+        variant="contained"
+        >
+          Submit
+        </Button>
+     </form>
   );
 }
 
