@@ -1,5 +1,11 @@
-netflix,
-portal do aluno 2.0,
-spotify,
-whatsapp 2,
-steam,
+Streaming de filmes e séries, (netflix, themoviedb, youtube),
+portal do aluno 2.0, necessita back
+App dem música, (spotify, deezer)
+whatsapp 2 (chat), (chatengine.io)
+steam, (api para jogos utilizarem e nao a loja)
+Loja de comercio virtual, (mercado livre),
+Biblioteca pessoal (google books api),
+Fatos sobre Gatos, (Cat API)
+Armazenamento em nuvem, (Dropbox, Google Drive, Onedrive)
+App de video, (vimeo, youtube)
+Loja de Games
