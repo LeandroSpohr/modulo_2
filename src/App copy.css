@@ -20,11 +20,11 @@ body {
 
 .categoria-lista {
   display: flex;
-  overflow: hidden;
+  overflow-x: scroll;
 }
 
 .categoria-lista img {
-  height: 300px;
+  height: 200px;
   transform: scale(0.9);
   transition: ease 0.2s;
 }
@@ -33,29 +33,15 @@ body {
   transform: scale(1);
 }
 
-.botao-lista {
-  height: 300px;
-  z-index: 99;
+.categoria-lista-esquerda{
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.categoria-esquerda {
+  height: 200px;
   left: 0;
+  z-index: 99;
 }
 
-.categoria-direita {
+.categoria-lista-direita{
+  position: absolute;
+  height: 200px;
   right: 0;
-}
-
-.icone {
-  transform: scale(0.9);
-  transition: ease 0.2s;
-}
-
-.icone:hover {
-  transform: scale(1.2);
 }
