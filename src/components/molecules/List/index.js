@@ -29,7 +29,7 @@ function List(props) {
       {
         props.moviesImg.map((movieImg, index) => {
           return <>
-            <img src={movieImg} alt={index} />
+            <img src={movieImg} width="300" alt={index} />
           </>
         })
       }
