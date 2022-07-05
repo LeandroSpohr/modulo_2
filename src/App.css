@@ -27,6 +27,7 @@ body {
   height: 300px;
   transform: scale(0.9);
   transition: ease 0.2s;
+  border-radius: 20px;
 }
 
 .categoria-lista img:hover {

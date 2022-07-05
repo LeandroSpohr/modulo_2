@@ -10,7 +10,7 @@ function Catalog() {
   const imgUrl = 'https://image.tmdb.org/t/p/w300'
 
   function scroll(x) {
-    listaRef.current.scrollTo({
+    listaRef.current.scrollBy({
       left: x,
       behavior: 'smooth',
     })
