@@ -22,20 +22,20 @@ function List(props) {
     >
       <Button
         className='botao-lista categoria-esquerda'
-        onClick={() => scroll(-500)}
+        onClick={() => scroll(-300)}
       >
         <MdOutlineArrowBackIosNew className='icone' size={35} />
       </Button>
       {
         props.moviesImg.map((movieImg, index) => {
           return <>
-            <img src={movieImg} width="300" alt={index} />
+            <img src={movieImg} alt={index} />
           </>
         })
       }
       <Button
         className='botao-lista categoria-direita'
-        onClick={() => scroll(500)}
+        onClick={() => scroll(300)}
       >
         <MdOutlineArrowForwardIos className='icone' size={35} />
       </Button>
